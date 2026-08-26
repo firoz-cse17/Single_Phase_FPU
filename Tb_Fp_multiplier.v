@@ -1,7 +1,7 @@
 `timescale 1ns/1ps
-`include "fp_multiplier.v"
+`include "Fp_multiplier.v"
 
-module tb_fp_multiplier;
+module Tb_Fp_multiplier;
 
     reg  [31:0] a, b;
     wire [31:0] result;

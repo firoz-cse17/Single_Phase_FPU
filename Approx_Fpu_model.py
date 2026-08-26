@@ -138,7 +138,7 @@ def approx_multiply_comp(a, b, mant_bits):
     return _round_and_pack(product, exp_sum, result_sign, specials)
 
 
-def validate_models(vectors_path="approx_mul_results.txt"):
+def validate_models(vectors_path="Approx_mul.txt"):
     """Cross-check approx_multiply_trunc against the Icarus Verilog dump."""
     rows = []
     with open(vectors_path) as f:

@@ -17,14 +17,7 @@ standard, reproducible small-scale benchmark.
 import numpy as np
 from sklearn.datasets import load_digits
 from sklearn.model_selection import train_test_split
-try:
-    # preferred import
-    from sklearn.neural_network import MLPClassifier
-except Exception:
-    # some environments / linters may not resolve the submodule; fall back
-    # to importing the package and grabbing the attribute
-    from sklearn import neural_network
-    MLPClassifier = neural_network.MLPClassifier
+from sklearn.neural_network import MLPClassifier
 from sklearn.preprocessing import StandardScaler
 
 from Approx_Fpu_model import approx_multiply_trunc, approx_multiply_comp

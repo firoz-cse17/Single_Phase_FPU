@@ -1,7 +1,7 @@
 `timescale 1ns/1ps
-`include "fp_adder_subtractor.v"
+`include "Fp_adder_subtractor.v"
 
-module tb_bulk_add;
+module Tb_bulk_add;
 
     reg  [31:0] a, b, expected;
     reg         sub;
@@ -19,9 +19,9 @@ module tb_bulk_add;
     initial begin
         errors = 0;
         total  = 0;
-        fd = $fopen("vectors_add.txt", "r");
+        fd = $fopen("Vector_add.txt", "r");
         if (fd == 0) begin
-            $display("ERROR: could not open vectors_add.txt");
+            $display("ERROR: could not open Vector_add.txt");
             $finish;
         end
 

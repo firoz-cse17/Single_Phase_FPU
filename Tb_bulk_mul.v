@@ -1,7 +1,7 @@
 `timescale 1ns/1ps
-`include "fp_multiplier.v"
+`include "Fp_multiplier.v"
 
-module tb_bulk_mul;
+module Tb_bulk_mul;
 
     reg  [31:0] a, b, expected;
     wire [31:0] result;
@@ -18,9 +18,9 @@ module tb_bulk_mul;
     initial begin
         errors = 0;
         total  = 0;
-        fd = $fopen("vectors_mul.txt", "r");
+        fd = $fopen("Vector_mul.txt", "r");
         if (fd == 0) begin
-            $display("ERROR: could not open vectors_mul.txt");
+            $display("ERROR: could not open Vector_mul.txt");
             $finish;
         end
 

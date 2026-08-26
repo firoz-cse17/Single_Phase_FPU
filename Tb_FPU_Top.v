@@ -1,5 +1,5 @@
 `timescale 1ns/1ps
-`include "fpu_top.v"
+`include "FPU_Top.v"
 
 module tb_fpu_top;
 

@@ -1,7 +1,7 @@
 `timescale 1ns/1ps
-`include "fp_adder_subtractor.v"
+`include "Fp_adder_subtractor.v"
 
-module tb_fp_adder_subtractor;
+module Tb_Fp_adder_subtractor;
 
     reg  [31:0] a, b;
     reg         sub;
